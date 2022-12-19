@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebesteleven.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutY="2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../files/35287502-bowling-the-cricket-player-design-by-brush-stroke-vector-Stock-Vector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="45.0" fitWidth="39.0" layoutX="708.0" layoutY="506.0" onMouseClicked="#mouseclick2" onMouseEntered="#mouseenter5" onMouseExited="#mouseexit5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../files/undo-3-512.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.44" contrast="0.49" hue="0.09" saturation="0.33" />
+         </effect>
+      </ImageView>
+      <Label fx:id="l8" layoutX="710.0" layoutY="552.0">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="74.13" radius="32.8575" spread="0.78" width="59.3" />
+         </effect>
+      </Label>
+      <Label fx:id="l10" layoutX="424.0" layoutY="405.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="4w &amp; 5w :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l9" layoutX="424.0" layoutY="377.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Strike Rate :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="424.0" layoutY="279.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Economy :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="424.0" layoutY="248.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Average :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l7" layoutX="424.0" layoutY="347.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Best Match Bowling :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="424.0" layoutY="316.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Best Inn Bowling :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="424.0" layoutY="214.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Wickets :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="424.0" layoutY="178.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Runs conceded :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l1" layoutX="424.0" layoutY="141.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Balls bowled :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="102.0" prefHeight="39.0" prefWidth="137.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Catches Taken :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="536.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="4's &amp; 6's :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="506.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="50  &amp; 100 :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="475.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Strike Rate :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="292.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Balls Faced :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="445.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Average :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="415.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Highest Score :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="353.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Not outs :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="323.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Matches played :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="198.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Bowling Stlyle :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="162.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Batting Style :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="126.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Playing Role :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="90.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Age :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="54.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Name :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="247.0" text="Batting Stats " textFill="#255dc6" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" layoutY="49.0" text="Bowling Stats " textFill="#255dc6" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t26" layoutX="121.0" layoutY="57.0" promptText="Full name" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t27" layoutX="121.0" layoutY="93.0" promptText="Age in years" style="-fx-background-radius: 15 15 15 15;" />
+      <ChoiceBox fx:id="cb1" layoutX="179.0" layoutY="129.0" onMouseEntered="#battingStyle" prefHeight="25.0" prefWidth="91.0" style="-fx-background-radius: 15 15 15 15;" />
+      <ChoiceBox fx:id="cb2" layoutX="179.0" layoutY="165.0" onMouseEntered="#battingStyle" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t28" layoutX="196.0" layoutY="295.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t29" layoutX="196.0" layoutY="326.0" prefHeight="25.0" prefWidth="97.0" promptText="Total matches played" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t30" layoutX="196.0" layoutY="356.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t32" layoutX="192.0" layoutY="418.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t33" editable="false" layoutX="192.0" layoutY="448.0" onMouseClicked="#calculateBattingAverage" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t34" editable="false" layoutX="192.0" layoutY="478.0" onMouseClicked="#calculateBattingStrikeRate" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t35" layoutX="192.0" layoutY="508.0" prefHeight="25.0" prefWidth="53.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t36" layoutX="194.0" layoutY="538.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t37" layoutX="609.0" layoutY="109.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t38" layoutX="609.0" layoutY="146.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t39" layoutX="609.0" layoutY="181.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t40" layoutX="609.0" layoutY="218.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t41" editable="false" layoutX="609.0" layoutY="251.0" onMouseClicked="#calculateBowlingAverage" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t42" editable="false" layoutX="609.0" layoutY="282.0" onMouseClicked="#calculateEconomy" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t43" layoutX="609.0" layoutY="319.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t44" layoutX="609.0" layoutY="349.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t45" editable="false" layoutX="609.0" layoutY="379.0" onMouseClicked="#calculateBowlingStrikeRate" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <TextField fx:id="t46" layoutX="609.0" layoutY="409.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <Label layoutX="46.0" layoutY="383.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Runs scored :" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t31" layoutX="192.0" layoutY="389.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <Label fx:id="l11" layoutX="503.0" layoutY="484.0" onMouseClicked="#addPlayer" onMouseEntered="#addButtonEnter" onMouseExited="#addButtonExit" text="Add Player" textFill="#0655e8">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow color="#3d9be8" height="62.27" radius="32.8575" spread="0.53" width="71.16" />
+         </effect>
+      </Label>
+      <ChoiceBox fx:id="cb3" layoutX="192.0" layoutY="202.0" onMouseEntered="#battingStyle" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" />
+      <CheckBox fx:id="chkb1" layoutX="218.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#checkBoxSet" textAlignment="CENTER" />
+      <Label layoutX="47.0" layoutY="229.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Wicket Keeper" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l12" layoutX="424.0" layoutY="139.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Stumps :" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t47" layoutX="609.0" layoutY="146.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-radius: 15 15 15 15;" visible="false" />
+      <TextField fx:id="t35" layoutX="254.0" layoutY="508.0" prefHeight="25.0" prefWidth="53.0" style="-fx-background-radius: 15 15 15 15;" />
+      <Label fx:id="l13" layoutX="338.0" layoutY="542.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

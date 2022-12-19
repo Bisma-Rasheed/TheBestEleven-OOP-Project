@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebesteleven.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../files/Cricket-World-cup-ILLUSTRATION-S.JAMAL_2111-132088.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img5" fitHeight="45.0" fitWidth="39.0" layoutX="728.0" layoutY="526.0" onMouseClicked="#mouseclick2" onMouseEntered="#mouseenter5" onMouseExited="#mouseexit5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../files/undo-3-512.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="0.07" saturation="-0.07" />
+         </effect>
+      </ImageView>
+      <Label fx:id="l8" layoutX="724.0" layoutY="565.0">
+         <effect>
+            <DropShadow color="WHITE" height="74.13" radius="32.8575" spread="0.78" width="59.3" />
+         </effect>
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="ap2" layoutX="301.0" layoutY="99.0" prefHeight="402.0" prefWidth="451.0" style="-fx-background-radius: 20 20 20 20;" visible="false">
+         <children>
+            <ImageView fitHeight="402.0" fitWidth="451.0" opacity="0.79" pickOnBounds="true" style="-fx-background-radius: 20 20 20 20;">
+               <image>
+                  <Image url="@../files/IMG_256818.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img6" fitHeight="161.0" fitWidth="185.0" layoutX="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="159.0" layoutY="27.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Name :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" editable="false" layoutX="267.0" layoutY="25.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t2" layoutX="267.0" layoutY="54.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="159.0" layoutY="56.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Age :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="159.0" layoutY="89.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Playing Role :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t3" editable="false" layoutX="267.0" layoutY="87.0" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="158.0" layoutY="120.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Batting Style :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="159.0" layoutY="152.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Bowling Stlyle :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t4" editable="false" layoutX="267.0" layoutY="118.0" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="t5" editable="false" layoutX="268.0" layoutY="152.0" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="15.0" layoutY="191.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Matches played :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="212.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Not outs :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="233.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Runs :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="254.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="HIghest Score :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="275.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Average :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="296.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Balls Faced :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="317.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Strike Rate :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="338.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="100 :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="359.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="50 :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="378.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="4's and  6's :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t6" editable="false" layoutX="124.0" layoutY="189.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t7" editable="false" layoutX="124.0" layoutY="210.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t8" editable="false" layoutX="124.0" layoutY="231.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t9" editable="false" layoutX="124.0" layoutY="252.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t10" editable="false" layoutX="124.0" layoutY="273.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t11" editable="false" layoutX="124.0" layoutY="294.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t12" editable="false" layoutX="124.0" layoutY="315.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t13" editable="false" layoutX="124.0" layoutY="336.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t14" editable="false" layoutX="124.0" layoutY="357.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t15" editable="false" layoutX="124.0" layoutY="376.0" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: transparent;" />
+            <Label layoutX="240.0" layoutY="191.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Catches Taken :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="212.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Balls :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="233.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Runs :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="254.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Wickets :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="275.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Best Inn Bowling :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="296.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Best Mtch Bowling :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="317.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Average :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="338.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Economy :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="359.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="Strike Rate :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="378.0" style="-fx-background-color: transparent; -fx-background-radius: 5 5 5 5;" text="4w and 5w :" textAlignment="CENTER" textFill="#327bda">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t16" editable="false" layoutX="373.0" layoutY="189.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t17" editable="false" layoutX="373.0" layoutY="210.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t18" editable="false" layoutX="373.0" layoutY="231.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t19" editable="false" layoutX="373.0" layoutY="252.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t20" editable="false" layoutX="373.0" layoutY="273.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t21" editable="false" layoutX="373.0" layoutY="294.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t22" editable="false" layoutX="373.0" layoutY="315.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t23" layoutX="373.0" layoutY="336.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t24" editable="false" layoutX="373.0" layoutY="357.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+            <TextField fx:id="t25" editable="false" layoutX="373.0" layoutY="376.0" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="lst2" layoutX="108.0" layoutY="149.0" onMouseClicked="#profileView1" prefHeight="268.0" prefWidth="173.0" visible="false" />
+      <Label fx:id="l9" layoutX="234.0" layoutY="30.0" text="The Best Eleven" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ProgressIndicator fx:id="pg1" layoutX="386.0" layoutY="262.0" onMouseEntered="#progressEnd" prefHeight="78.0" prefWidth="62.0" />
+      <Label fx:id="l10" layoutX="311.0" layoutY="340.0" onMouseClicked="#teamView" onMouseEntered="#progressEnd" text="Generating team using Genetic Algorithm..." />
+   </children>
+</AnchorPane>

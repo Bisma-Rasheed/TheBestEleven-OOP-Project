@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thebesteleven.Controller">
+  <children>
+    <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="false" scaleX="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <image>
+        <Image url="@../files/IMG_1991.JPG" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="img1" fitHeight="173.0" fitWidth="132.0" layoutX="56.0" layoutY="214.0" onMouseClicked="#mouseClick1" onMouseEntered="#mouseEnter1" onMouseExited="#mouseExit1" pickOnBounds="true" scaleX="1.0" AnchorPane.bottomAnchor="213.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="612.0" AnchorPane.topAnchor="214.0">
+      <effect>
+        <DropShadow />
+      </effect>
+      <image>
+        <Image url="@../files/cricket-pose1.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="img2" fitHeight="157.0" fitWidth="117.0" layoutX="314.0" layoutY="214.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#clickBrowsePlayer" onMouseEntered="#mouseEnter2" onMouseExited="#mouseExit2" pickOnBounds="true" preserveRatio="false">
+      <effect>
+        <DropShadow />
+      </effect>
+      <image>
+        <Image url="@../files/Bowling_shadow_figure.png" />
+      </image>
+    </ImageView>
+    <ImageView fx:id="img3" fitHeight="147.0" fitWidth="164.0" layoutX="171.0" layoutY="404.0" onMouseClicked="#clickGenerateTeam" onMouseEntered="#mouseEnter3" onMouseExited="#mouseExit3" pickOnBounds="true" preserveRatio="false">
+      <effect>
+        <DropShadow color="#4d83e1" height="112.92" radius="64.1125" spread="0.26" width="145.53" />
+      </effect>
+      <image>
+        <Image url="@../files/team%20(1).png" />
+      </image>
+    </ImageView>
+      <Label fx:id="l1" layoutX="87.0" layoutY="247.0" onMouseClicked="#mouseClick1" onMouseEntered="#mouseEnter1" onMouseExited="#mouseExit1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow color="#111111" height="80.0" radius="38.25" spread="0.59" width="75.0" />
+         </effect>
+      </Label>
+      <Label fx:id="l2" layoutX="68.0" layoutY="293.0" onMouseClicked="#mouseClick1" onMouseEntered="#mouseEnter1" onMouseExited="#mouseExit1" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <DropShadow color="#111111" height="80.0" radius="38.25" spread="0.59" width="75.0" />
+         </effect>
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="l3" layoutX="314.0" layoutY="255.0" onMouseClicked="#clickBrowsePlayer" onMouseEntered="#mouseEnter2" onMouseExited="#mouseExit2" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <DropShadow color="#111111" height="80.0" radius="38.25" spread="0.59" width="75.0" />
+         </effect>
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="l4" layoutX="314.0" layoutY="293.0" onMouseClicked="#clickBrowsePlayer" onMouseEntered="#mouseEnter2" onMouseExited="#mouseExit2" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <DropShadow color="#111111" height="80.0" radius="38.25" spread="0.59" width="75.0" />
+         </effect>
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="l5" layoutX="181.0" layoutY="440.0" onMouseClicked="#clickGenerateTeam" onMouseEntered="#mouseEnter3" onMouseExited="#mouseExit3" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <DropShadow color="#111111" height="80.0" radius="38.25" spread="0.59" width="75.0" />
+         </effect>
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="l6" layoutX="208.0" layoutY="478.0" onMouseClicked="#clickGenerateTeam" onMouseEntered="#mouseEnter3" onMouseExited="#mouseExit3" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <DropShadow color="#111111" height="80.0" radius="38.25" spread="0.59" width="75.0" />
+         </effect>
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img4" fitHeight="58.0" fitWidth="56.0" layoutX="695.0" layoutY="496.0" onMouseClicked="#exitApp" onMouseEntered="#mouseEnter4" onMouseExited="#mouseExit4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../files/exit.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="l7" layoutX="702.0" layoutY="558.0" textFill="WHITE">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="37.07" radius="15.440000000000001" spread="0.51" width="26.69" />
+         </effect>
+      </Label>
+      <Text layoutX="47.0" layoutY="89.0" stroke="WHITE" strokeType="OUTSIDE" text="The Best" textAlignment="CENTER" wrappingWidth="247.052734375" AnchorPane.bottomAnchor="500.8681640625" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="505.947265625" AnchorPane.topAnchor="49.1318359375">
+         <font>
+            <Font name="Showcard Gothic" size="50.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Text>
+      <Text layoutX="188.0" layoutY="141.0" stroke="WHITE" strokeType="OUTSIDE" text="Eleven">
+         <font>
+            <Font name="Showcard Gothic" size="50.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Text>
+  </children>
+</AnchorPane>
